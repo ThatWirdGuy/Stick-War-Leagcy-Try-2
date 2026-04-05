@@ -38,51 +38,32 @@
 <div id="mask" style="position: absolute; z-index: 9001; background-color: black; display: none; opacity: 0.9; filter:alpha(opacity=90);">
 </div>
 
-<div id="top_nav">
-	<div id="sp_logo_small">
-		<a href="/"><img src="/img/sp_logo_small.png" width="30" height="30" /></a>
-	</div>
-	<div id="sp_logo_small_text" style="z-index: 3;">
-		<a href="/"><img src="/img/sp_logo_small_text.gif" /></a>
-	</div>
-
-	<div id="social_links" style="position:absolute;top:4px;left:234px;height:24px;">
-		<a href="http://www.facebook.com/stickpage"><img style="width:24px;height:24px;margin-right:5px;" src="/img/social_facebook.png" /></a>
-		<a href="http://www.youtube.com/user/stickpagestudios"><img style="width:24px;height:24px;margin-right:5px;" src="/img/social_youtube.png" /></a>
-		<a href="http://www.livestream.com/stickpage"><img style="width:24px;height:24px;margin-right:5px;" src="/img/social_livestream.png" /></a>
-		<a href="http://www.twitter.com/stickpagenews"><img style="width:24px;height:24px;" src="/img/social_twitter.png" /></a>
-	</div>
-
-	<div style="position:absolute;top:5px;right:20px;height:23px;">
-		  </div>
-</div>
-
 <div id="content_container">
 	<div id="content">
-		<script src="https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/UnityProgress.js"></script>
-<script src="https://farm.stickpage.com/StickWarLegacy/WebGL/Build/UnityLoader.js"></script>
+		<script src="https://github.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/tree/main/WebGLTemplateData/UnityProgress.js"></script>
+<script src="https://github.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/tree/main/WebGL/Build/UnityLoader.js"></script>
 <style>
 .webgl-content * {border: 0; margin: 0; padding: 0}
 .webgl-content {position: relative; }
 
 .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
-.webgl-content .logo {background: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
+.webgl-content .logo {background: url('https://github.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/tree/main/WebGL/WebGL/TemplateData/progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
 .webgl-content .progress {height: 18px; width: 141px; margin-top: 90px;}
-.webgl-content .progress .empty {background: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/progressEmpty.Light.png') no-repeat right / cover; float: right; width: 100%; height: 100%; display: inline-block;}
-.webgl-content .progress .full {background: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/progressFull.Light.png') no-repeat left / cover; float: left; width: 0%; height: 100%; display: inline-block;}
+.webgl-content .progress .empty {background: url('https://github.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/tree/main/WebGL/TemplateData/progressEmpty.Light.png') no-repeat right / cover; float: right; width: 100%; height: 100%; display: inline-block;}
+.webgl-content .progress .full {background: url('https://github.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/tree/main/WebGL/TemplateData/progressFull.Light.png') no-repeat left / cover; float: left; width: 0%; height: 100%; display: inline-block;}
 
-.webgl-content .logo.Dark {background-image: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/progressLogo.Dark.png');}
-.webgl-content .progress.Dark .empty {background-image: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/progressEmpty.Dark.png');}
-.webgl-content .progress.Dark .full {background-image: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/progressFull.Dark.png');}
+.webgl-content .logo.Dark {background-image: url('https://github.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/tree/main/WebGL/TemplateData/progressLogo.Dark.png');}
+.webgl-content .progress.Dark .empty {background-image: url('https://github.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/tree/main/WebGL/TemplateData/progressEmpty.Dark.png');}
+.webgl-content .progress.Dark .full {background-image: url('https://github.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/tree/main/WebGL/TemplateData/progressFull.Dark.png');}
 
 .webgl-content .footer {margin-top: 5px; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;}
 .webgl-content .footer .webgl-logo, .title, .fullscreen {height: 100%; display: inline-block; background: transparent center no-repeat;}
-.webgl-content .footer .webgl-logo {background-image: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/webgl-logo.png'); width: 204px; float: left;}
+.webgl-content .footer .webgl-logo {background-image: url('https://github.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/tree/main/WebGL/TemplateData/webgl-logo.png'); width: 204px; float: left;}
 .webgl-content .footer .title {margin-right: 10px; float: right;}
-.webgl-content .footer .fullscreen {background-image: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/fullscreen.png'); width: 38px; float: right; position: relative; right: -90px; top: -5px;}
+.webgl-content .footer .fullscreen {background-image: url('https://github.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/tree/main/WebGL/TemplateData/fullscreen.png'); width: 38px; float: right; position: relative; right: -90px; top: -5px;}
 </style>
 <script>
-  var gameInstance = UnityLoader.instantiate("gameContainer", "https://farm.stickpage.com/StickWarLegacy/WebGL/Build/WebGl.json", {onProgress: UnityProgress});
+  var gameInstance = UnityLoader.instantiate("gameContainer", "https://github.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/tree/main/WebGL/Build/WebGl.json", {onProgress: UnityProgress});
 </script>
 <div class="webgl-content">
       <div id="gameContainer" style="width: 960px; height: 600px; left: -90px; margin: 20px;"></div>
