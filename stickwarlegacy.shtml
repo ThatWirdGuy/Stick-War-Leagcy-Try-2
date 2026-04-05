@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Stick War: Legacy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="xiao games, flash games, fun games, matrix games, games, stick games, flashgames, addictive games, play games" />
+<meta name="description" content="Play all the best stick flash games here. From xiao games to matrix games." />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+
+<!-- Application Includes and Styles -->
+<script type="text/javascript" src="/js/application.js"></script>
+<link type="text/css" rel="stylesheet" href="/css/application.css"/>
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="/css/application_ie.css" />
+<![endif]-->
+
+<!-- Ruffle Flash Player polyfill -->
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = { polyfill: true, autoplay: true, showPlayButton: false, unmuteOverlay: false };
+    window.addEventListener("DOMContentLoaded", function() {
+        window.RufflePlayer.polyfill();
+        document.querySelectorAll("ruffle-player").forEach(function(player) {
+            try { player.play(); } catch (e) {}
+        });
+    });
+</script>
+<style type="text/css" media="screen">
+    object { outline:none; }
+</style>
+
+
+</head>
+
+<body>
+<div id="mask" style="position: absolute; z-index: 9001; background-color: black; display: none; opacity: 0.9; filter:alpha(opacity=90);">
+</div>
+
+<div id="top_nav">
+	<div id="sp_logo_small">
+		<a href="/"><img src="/img/sp_logo_small.png" width="30" height="30" /></a>
+	</div>
+	<div id="sp_logo_small_text" style="z-index: 3;">
+		<a href="/"><img src="/img/sp_logo_small_text.gif" /></a>
+	</div>
+
+	<div id="social_links" style="position:absolute;top:4px;left:234px;height:24px;">
+		<a href="http://www.facebook.com/stickpage"><img style="width:24px;height:24px;margin-right:5px;" src="/img/social_facebook.png" /></a>
+		<a href="http://www.youtube.com/user/stickpagestudios"><img style="width:24px;height:24px;margin-right:5px;" src="/img/social_youtube.png" /></a>
+		<a href="http://www.livestream.com/stickpage"><img style="width:24px;height:24px;margin-right:5px;" src="/img/social_livestream.png" /></a>
+		<a href="http://www.twitter.com/stickpagenews"><img style="width:24px;height:24px;" src="/img/social_twitter.png" /></a>
+	</div>
+
+	<div style="position:absolute;top:5px;right:20px;height:23px;">
+		  </div>
+</div>
+
+<div id="content_container">
+	<div id="content">
+		<script src="https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/UnityProgress.js"></script>
+<script src="https://farm.stickpage.com/StickWarLegacy/WebGL/Build/UnityLoader.js"></script>
+<style>
+.webgl-content * {border: 0; margin: 0; padding: 0}
+.webgl-content {position: relative; }
+
+.webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.webgl-content .logo {background: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
+.webgl-content .progress {height: 18px; width: 141px; margin-top: 90px;}
+.webgl-content .progress .empty {background: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/progressEmpty.Light.png') no-repeat right / cover; float: right; width: 100%; height: 100%; display: inline-block;}
+.webgl-content .progress .full {background: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/progressFull.Light.png') no-repeat left / cover; float: left; width: 0%; height: 100%; display: inline-block;}
+
+.webgl-content .logo.Dark {background-image: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/progressLogo.Dark.png');}
+.webgl-content .progress.Dark .empty {background-image: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/progressEmpty.Dark.png');}
+.webgl-content .progress.Dark .full {background-image: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/progressFull.Dark.png');}
+
+.webgl-content .footer {margin-top: 5px; height: 38px; line-height: 38px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;}
+.webgl-content .footer .webgl-logo, .title, .fullscreen {height: 100%; display: inline-block; background: transparent center no-repeat;}
+.webgl-content .footer .webgl-logo {background-image: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/webgl-logo.png'); width: 204px; float: left;}
+.webgl-content .footer .title {margin-right: 10px; float: right;}
+.webgl-content .footer .fullscreen {background-image: url('https://farm.stickpage.com/StickWarLegacy/WebGL/TemplateData/fullscreen.png'); width: 38px; float: right; position: relative; right: -90px; top: -5px;}
+</style>
+<script>
+  var gameInstance = UnityLoader.instantiate("gameContainer", "https://farm.stickpage.com/StickWarLegacy/WebGL/Build/WebGl.json", {onProgress: UnityProgress});
+</script>
+<div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px; left: -90px; margin: 20px;"></div>
+      <div class="footer">
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+      </div>
+</div>
+</div>
+
+		<div id="footer_container">
+			<div id="footer" style="height: 22px; margin-top: 0px; padding-top: 8px; text-align: center; background-image: URL('/img/footer_bg.gif'); font-weight: bold; font-size: 8pt; color: #000000;">
+				<a style="color: #000000;" href="/">HOME</a> |
+				<a style="color: #000000;" href="/stickgames.shtml">GAMES</a> |
+				<a style="color: #000000;" href="/stickfights.shtml">FIGHTS</a> |
+				<a style="color: #000000;" href="/stickhumor.shtml">HUMOR</a> |
+				<a style="color: #000000;" href="http://forums.stickpage.com/forum.php">FORUM</a> |
+				<a style="color: #000000;" href="/wallpaper.shtml">WALLPAPER</a> |
+				<a style="color: #000000;" href="http://www.cafepress.com/stickpage">STORE</a> |
+				<a style="color: #000000;" href="/privacypolicy.shtml">PRIVACY</a> |
+				<a style="color: #000000;" href="mailto:jason@stickpage.com">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a style="color: #000000;" href="http://forums.stickpage.com/forum.php">LOGIN</a> |
+				<a style="color: #000000;" href="http://forums.stickpage.com/register.php">REGISTER</a>
+			</div>
+			<div style="text-align: center; font-weight: bold; font-size: 8pt; color: #000; padding-top: 8px;">
+				STICKPAGE.com copyright &copy; 2020
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1219640-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
