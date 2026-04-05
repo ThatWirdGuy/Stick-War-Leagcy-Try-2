@@ -1,13 +1,13 @@
 {
-"companyName": "Stick Page",
-"productName": "Stick War: Legacy",
-"dataUrl": "WebGl.data.unityweb",
-"asmCodeUrl": "WebGl.asm.code.unityweb",
-"asmMemoryUrl": "WebGl.asm.memory.unityweb",
-"asmFrameworkUrl": "WebGl.asm.framework.unityweb",
-"TOTAL_MEMORY": 268435456,
-"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
-"webglContextAttributes": {"preserveDrawingBuffer": false},
-"splashScreenStyle": "Dark",
-"backgroundColor": "#000000"
+  "companyName": "Stick Page",
+  "productName": "Stick War: Legacy",
+  "dataUrl": "https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/Build/WebGl.data.unityweb.js",
+  "asmCodeUrl": "https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/Build/WebGl.asm.code.unityweb.js",
+  "asmMemoryUrl": "https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/Build/WebGl.asm.memory.unityweb.js",
+  "asmFrameworkUrl": "https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/Build/WebGl.asm.framework.unityweb.js",
+  "TOTAL_MEMORY": 268435456,
+  "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+  "webglContextAttributes": {"preserveDrawingBuffer": false},
+  "splashScreenStyle": "Dark",
+  "backgroundColor": "#000000"
 }
