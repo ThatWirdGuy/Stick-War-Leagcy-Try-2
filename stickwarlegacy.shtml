@@ -112,7 +112,7 @@
 <div id="content_container">
   <div id="content">
 
-    <script src="https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGLTemplateData/UnityProgress.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/TemplateData/UnityProgress.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/Build/UnityLoader.js"></script>
 
     <div class="webgl-content">
