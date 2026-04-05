@@ -7,7 +7,6 @@
 <meta name="description" content="Play all the best stick flash games here. From xiao games to matrix games." />
 <link rel="shortcut icon" href="/favicon.ico" />
 
-<!-- Application Includes and Styles -->
 <script type="text/javascript" src="/js/application.js"></script>
 <link type="text/css" rel="stylesheet" href="/css/application.css"/>
 <!--[if lt IE 9]>
@@ -30,7 +29,7 @@
   }
 
   .webgl-content .logo {
-    background: url('https://raw.githubusercontent.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/main/WebGL/TemplateData/progressLogo.Light.png') no-repeat center / contain;
+    background: url('https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/TemplateData/progressLogo.Light.png') no-repeat center / contain;
     width: 154px;
     height: 130px;
   }
@@ -42,7 +41,7 @@
   }
 
   .webgl-content .progress .empty {
-    background: url('https://raw.githubusercontent.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/main/WebGL/TemplateData/progressEmpty.Light.png') no-repeat right / cover;
+    background: url('https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/TemplateData/progressEmpty.Light.png') no-repeat right / cover;
     float: right;
     width: 100%;
     height: 100%;
@@ -50,7 +49,7 @@
   }
 
   .webgl-content .progress .full {
-    background: url('https://raw.githubusercontent.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/main/WebGL/TemplateData/progressFull.Light.png') no-repeat left / cover;
+    background: url('https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/TemplateData/progressFull.Light.png') no-repeat left / cover;
     float: left;
     width: 0%;
     height: 100%;
@@ -58,15 +57,15 @@
   }
 
   .webgl-content .logo.Dark {
-    background-image: url('https://raw.githubusercontent.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/main/WebGL/TemplateData/progressLogo.Dark.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/TemplateData/progressLogo.Dark.png');
   }
 
   .webgl-content .progress.Dark .empty {
-    background-image: url('https://raw.githubusercontent.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/main/WebGL/TemplateData/progressEmpty.Dark.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/TemplateData/progressEmpty.Dark.png');
   }
 
   .webgl-content .progress.Dark .full {
-    background-image: url('https://raw.githubusercontent.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/main/WebGL/TemplateData/progressFull.Dark.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/TemplateData/progressFull.Dark.png');
   }
 
   .webgl-content .footer {
@@ -86,7 +85,7 @@
   }
 
   .webgl-content .footer .webgl-logo {
-    background-image: url('https://raw.githubusercontent.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/main/WebGL/TemplateData/webgl-logo.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/TemplateData/webgl-logo.png');
     width: 204px;
     float: left;
   }
@@ -97,7 +96,7 @@
   }
 
   .webgl-content .footer .fullscreen {
-    background-image: url('https://raw.githubusercontent.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/main/WebGL/TemplateData/fullscreen.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/TemplateData/fullscreen.png');
     width: 38px;
     float: right;
     position: relative;
@@ -113,9 +112,8 @@
 <div id="content_container">
   <div id="content">
 
-    <!-- Load UnityProgress first, then UnityLoader, then instantiate -->
-    <script src="https://raw.githubusercontent.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/main/WebGLTemplateData/UnityProgress.js"></script>
-    <script src="https://raw.githubusercontent.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/main/WebGL/Build/UnityLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGLTemplateData/UnityProgress.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/Build/UnityLoader.js"></script>
 
     <div class="webgl-content">
       <div id="gameContainer" style="width: 960px; height: 600px; left: -90px; margin: 20px;"></div>
@@ -124,11 +122,10 @@
       </div>
     </div>
 
-    <!-- Instantiate AFTER the container exists and scripts are loaded -->
     <script>
       var gameInstance = UnityLoader.instantiate(
         "gameContainer",
-        "https://raw.githubusercontent.com/ThatWirdGuy/Stick-War-Leagcy-Try-2/main/WebGL/Build/WebGl.json",
+        "https://cdn.jsdelivr.net/gh/ThatWirdGuy/Stick-War-Leagcy-Try-2@main/WebGL/Build/WebGl.json",
         { onProgress: UnityProgress }
       );
     </script>
